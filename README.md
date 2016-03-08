@@ -8,6 +8,7 @@ Download [imagenet-vgg-verydeep-19](http://www.vlfeat.org/matconvnet/pretrained/
 
 ## Usage
 Run Artistic_Style.m
+
 Tested on OSX 10.11, Matlab 2014b, MatConvNet 1.0-beta16
 
 ## Details
