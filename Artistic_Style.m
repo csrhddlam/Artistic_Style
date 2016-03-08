@@ -20,7 +20,7 @@ net = insert_style_loss(net, 2, 0.25, beta);
 
 % width = 8*32; height = 8*32;
 % width = 1; height = 1;
-style_image = imread('style3.jpg');
+style_image = imread('style.jpg');
 max_side = 320;
 if (size(style_image,1) > max_side || size(style_image,2) > max_side)
     new_h = round(min(max_side/size(style_image,1),max_side/size(style_image,2)) * size(style_image,1));
@@ -54,7 +54,7 @@ for i = 1:numel(net.layers)
 end
 
 % mixed = init_std * rand(size(content),'single');
-% mixed = content;
+mixed = content;
 
 mixed = reshape(mixed,numel(mixed),1);
 options.Method = 'lbfgs';
